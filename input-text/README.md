@@ -6,8 +6,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code changes
+## Code changes In
+1) app.module.ts
 
-1) app.component.html
+   import {FormsModule} from '@angular/forms';
+   @NgModule({
+   imports: [
+    FormsModule
+   ]
+   })
+2) app.component.html
 
- <h1>Hello Word!</h1>
+ <input type="text" [(ngModel)]="name">
+ <p>{{ name }}</p>
+ 
+ ## Output
+ 
+ for output of this code , check below link
+ [Output](https://stackblitz.com/edit/inputext-tj9rha)
