@@ -10,6 +10,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 1) app.module.ts
 
    import {FormsModule} from '@angular/forms';
+   
    @NgModule({
    imports: [
     FormsModule
@@ -22,5 +23,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
  
  ## Output
  
- for output of this code , check below link
+ for output of this code , check on this link
  [Output](https://stackblitz.com/edit/inputext-tj9rha)
