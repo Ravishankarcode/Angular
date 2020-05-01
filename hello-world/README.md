@@ -10,4 +10,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 1) app.component.html
 
-> <h1>Hello Word!</h1>
+ /<h1>Hello Word!/</h1>
