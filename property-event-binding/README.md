@@ -20,7 +20,7 @@ export class AppComponent  {
 }
 ```
 2) app.component.html
-
+```
 <!-- String Interpolation -->
 <p>I am new in {{ name }}</p>
 
@@ -31,7 +31,7 @@ export class AppComponent  {
 <!-- Event Binding -->
 <button class ="btn btn-primary" [disabled]="buttonDisabled" (click)="onCreateServer()">Add Server</button>
 <p>{{ serverCreationStatus }}</p>
- 
+ ```
  ## Output
  
  for output of this code , check on this link
