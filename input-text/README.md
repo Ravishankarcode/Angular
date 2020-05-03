@@ -24,4 +24,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
  ## Output
  
  for output of this code , check on this link
- [Output](https://stackblitz.com/edit/inputext-tj9rha)
+ [Output](https://stackblitz.com/edit/2waybinding)
