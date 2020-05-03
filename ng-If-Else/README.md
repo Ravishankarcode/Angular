@@ -7,40 +7,20 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code changes In
-1) app.module.ts
+1) app.component.ts
 ```   
 export class AppComponent  {
-  name = 'Angular';
-  buttonDisabled = false;
-  serverCreationStatus = "No Server was created";
-  serverName = "something";
-  
-  onCreateServer(){
-    this.serverCreationStatus ="Server is created";
-  }
-  
-  onUpdateServerName(event : any){
-   this.serverName = (<HTMLInputElement>event.target).value;
-  }
+  serverName = "server123";
+  serverCrated = true;
 }
 ```
 2) app.component.html
 ```
-<!-- String Interpolation -->
-<p>I am new in {{ name }}</p>
+<p *ngIf="serverCrated; else noServer">Server was created, Server name is {{ serverName }} </p>
+<ng-template #noServer>No Server was Created!</ng-template>
 
-<!-- Property Binding -->
-<button class ="btn btn-primary" [disabled]="!buttonDisabled" >
-  Disable</button>
-<br/><br/>
-<!-- Event Binding -->
-<button class ="btn btn-primary" [disabled]="buttonDisabled" (click)="onCreateServer()">Add Server</button>
-<p>{{ serverCreationStatus }}</p>
-
-<input type="text" class="form-control" value="something"(input) = "onUpdateServerName($event)">
-<p>{{ serverName }}</p>
  ```
  ## Output
  
  for output of this code , check on this link
- [Output](https://stackblitz.com/edit/propertyeventbinding)
+ [Output](https://stackblitz.com/edit/ngifelse-example)
