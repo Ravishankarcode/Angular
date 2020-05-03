@@ -9,18 +9,31 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Code changes In
 1) app.component.ts
 ```   
+@Component({
+  styles: [ `
+      .online{
+      color: white;
+    }  
+  `
+  ]
+})
 export class AppComponent  {
-  serverName = "server123";
-  serverCrated = true;
+  serverStatus = "offline";
+  getColor(){
+    return this.serverStatus === 'online'?'green':'red';
+  }
 }
 ```
 2) app.component.html
 ```
-<p *ngIf="serverCrated; else noServer">Server was created, Server name is {{ serverName }} </p>
-<ng-template #noServer>No Server was Created!</ng-template>
+<p 
+[ngStyle] = "{backgroundColor: getColor()}"
+[ngClass] = "{online: serverStatus === 'online'}">
+Server was created, Server status is {{ serverStatus }} 
+</p>
 
  ```
  ## Output
  
  for output of this code , check on this link
- [Output](https://stackblitz.com/edit/ngifelse-example)
+ [Output](https://stackblitz.com/edit/ngstyleclass)
