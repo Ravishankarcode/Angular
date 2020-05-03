@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Code changes In
 1) app.module.ts
-
+   ```
    import {FormsModule} from '@angular/forms';
    
    @NgModule({
@@ -16,11 +16,12 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
     FormsModule
    ]
    })
+   ```
 2) app.component.html
-
+ ```
  <input type="text" [(ngModel)]="name">
  <p>{{ name }}</p>
- 
+ ```
  ## Output
  
  for output of this code , check on this link
