@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Code changes In
 1) app.module.ts
-   
+```   
 export class AppComponent  {
   name = 'Angular';
   buttonDisabled = false;
@@ -18,7 +18,7 @@ export class AppComponent  {
     this.serverCreationStatus ="Server is created";
   }
 }
-
+```
 2) app.component.html
 
 <!-- String Interpolation -->
