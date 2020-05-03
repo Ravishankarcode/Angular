@@ -13,9 +13,14 @@ export class AppComponent  {
   name = 'Angular';
   buttonDisabled = false;
   serverCreationStatus = "No Server was created";
-
+  serverName = "something";
+  
   onCreateServer(){
     this.serverCreationStatus ="Server is created";
+  }
+  
+  onUpdateServerName(event : any){
+   this.serverName = (<HTMLInputElement>event.target).value;
   }
 }
 ```
@@ -31,6 +36,9 @@ export class AppComponent  {
 <!-- Event Binding -->
 <button class ="btn btn-primary" [disabled]="buttonDisabled" (click)="onCreateServer()">Add Server</button>
 <p>{{ serverCreationStatus }}</p>
+
+<input type="text" class="form-control" value="something"(input) = "onUpdateServerName($event)">
+<p>{{ serverName }}</p>
  ```
  ## Output
  
