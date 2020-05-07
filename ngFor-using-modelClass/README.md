@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Install Bootstrap package
 
-Run `npm install --save bootstrap@4`.
+Run `npm install --save bootstrap@3`.
 
 ## Code changes In
 1) app.component.ts
