@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Syntex of Two-Way-Binding
+
+`[(ngModel)]="data"`
+
 ## Code changes In
 1) app.module.ts
    ```
