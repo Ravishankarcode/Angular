@@ -6,6 +6,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Syntex of Property Binding
+
+TypeScript Code(BL) ---Output Data---> Template(HTML)
+
+`[property]="data"`
+
+## Syntex of Event Binding
+
+TypeScript Code(BL) <---React to (User) Events--- Template(HTML)
+
+`(event)="expression"`
+
 ## Code changes In
 1) app.component.ts
 ```   
