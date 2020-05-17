@@ -1,6 +1,14 @@
-# HelloWord
+# Angular Content List
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+
+1. [Hello-World](https://github.com/Ravishankarcode/Angular/tree/master/hello-world)
+2. [ngIf-Else](https://github.com/Ravishankarcode/Angular/tree/master/ng-If-Else)
+3. [ngStyle-Class](https://github.com/Ravishankarcode/Angular/tree/master/ng-style-class)
+4. [ngFor-Using-ModelClass](https://github.com/Ravishankarcode/Angular/tree/master/ngFor-using-modelClass)
+5. [Property Enent Binding](https://github.com/Ravishankarcode/Angular/tree/master/property-event-binding)
+6. [Two Way Binding](https://github.com/Ravishankarcode/Angular/tree/master/two-way-binding)
+7. [DropDown Directive](https://github.com/Ravishankarcode/Angular/tree/master/dropdown-directive)
 
 ## Development server
 
